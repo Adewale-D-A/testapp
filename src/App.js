@@ -159,6 +159,21 @@ function App() {
                           ></span>
                         </button>
                       </div>
+                      <div className="code-sample">
+                        <code>
+                          <pre>
+                            const [spinner, setSpinner] = useState(false);{" "}
+                            <br />
+                            const item =
+                            document.getElementsByClassName(submit);
+                            <br />
+                            item[0].style.display = "block";
+                            <br />
+                            item[0].style.display = "none";
+                            <br />
+                          </pre>
+                        </code>
+                      </div>
                     </div>
                   </main>
                 </div>
