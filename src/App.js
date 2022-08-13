@@ -109,7 +109,7 @@ function App() {
                         <p>
                           <span>
                             For reference: Personal Git Repository
-                            <a href="https://github.com/Adewale-D-A">
+                            <a href="https://github.com/Adewale-D-A/testapp">
                               <b>@adewale-d-a</b>
                             </a>
                           </span>
