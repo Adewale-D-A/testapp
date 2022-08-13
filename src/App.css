@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: leagueSpartan;
+  src: url(./fonts/LeagueSpartan-VariableFont_wght.ttf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: PTSans-Regular;
+  src: url(./fonts/PTSans-Regular.ttf);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  justify-content: space-between;
+  height: 30px;
+  background-color: rgba(97, 155, 49, 0.7);
+  font-family: leagueSpartan;
+}
+.app-nav-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-content {
+  margin: 0px 10px 0px 10px;
+}
+.nav-content:hover {
+  cursor: pointer;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.useContext-main-1 {
+  display: flex;
+  justify-content: center;
+}
+main {
+  font-family: PTSans-Regular;
+}
+.components-states {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.components-count {
+  flex: 1;
+}
+.state-chng {
+  flex: 0.5;
+}
+button[class="oveall-state-hide"] {
+  all: unset;
+  background-color: rgb(78, 38, 189);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+button[class="oveall-state-hide"]:hover {
+  cursor: pointer;
+  background-color: rgb(107, 71, 207);
+}
+button[class="spinner-btn"] {
+  all: unset;
+  background-color: rgb(0, 255, 85);
+  color: white;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+button[class="spinner-btn"]:hover {
+  cursor: pointer;
+}
+.spinner-submit {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Vanilla Javascript Loader display */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }

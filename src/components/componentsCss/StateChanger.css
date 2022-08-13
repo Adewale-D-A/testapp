@@ -1,0 +1,13 @@
+button[class="state-chng-btn"] {
+  all: unset;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(78, 38, 189);
+  margin: 10px;
+  text-align: center;
+}
+button[class="state-chng-btn"]:hover {
+  cursor: pointer;
+  background-color: rgb(107, 71, 207);
+}

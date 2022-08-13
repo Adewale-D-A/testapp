@@ -1,0 +1,16 @@
+.react-component-one {
+  background-color: rgba(29, 185, 107, 0.7);
+  padding: 10px;
+  color: white;
+  margin: 10px 10px 0px 0px;
+}
+button[class="btn"] {
+  all: unset;
+  background-color: rgb(78, 38, 189);
+  border-radius: 5px;
+  padding: 10px;
+}
+button[class="btn"]:hover {
+  cursor: pointer;
+  background-color: rgb(107, 71, 207);
+}
