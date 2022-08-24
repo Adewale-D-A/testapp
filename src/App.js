@@ -17,6 +17,22 @@ import StateChange from "./components/StateChanger";
 // };
 
 function App() {
+  // const visible = document.visibilityState;
+  // console.log(document.visibilityState);
+  //return valaue: "visible", "hidden" and "prerender"
+  //  document.visibilityState Return Value:
+  // visible: When page content may be visible to user.
+  // hidden: When page content is not visible to user.
+  // prerender: when document is being prerendered and is not visible to user.
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      console.log("user just left this tab");
+    } else {
+      console.log("user is currently on your tab");
+    }
+    // console.log("tab changed");
+  });
   //useContext overall state
   const [contextStateAll, setContextStateAll] = useState(false);
   const [contextHook1, setContextHook1] = useState(true);
